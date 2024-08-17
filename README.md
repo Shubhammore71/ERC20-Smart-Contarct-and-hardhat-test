@@ -1,6 +1,6 @@
 # vERC20 Token Sale Platform
 
-This repository contains a basic Hardhat project that demonstrates the use of Hardhat for deploying and testing smart contracts. The project includes a sample ERC20 token contract and a platform for selling the token. Additionally, a Next.js app structure is provided to help you build your own Web3 application.
+This repository contains a basic Hardhat project and a React application that demonstrates the use of Hardhat for deploying and testing smart contracts, along with building a Web3 token sale platform. The project includes a sample ERC20 token contract and a React Context Provider for managing interactions with the token.
 
 ## Project Structure
 
@@ -15,7 +15,7 @@ This repository contains a basic Hardhat project that demonstrates the use of Ha
 The Next.js app includes the following directory structure:
 
 - **components**: Contains reusable React components.
-- **context**: Provides React context for state management.
+- **context**: Provides React context for state management (includes `ERC20Provider` component).
 - **contracts**: Includes smart contract ABIs and other related files.
 - **ignition/modules**: Contains modules for Hardhat Ignition deployment.
 - **pages**: Contains Next.js pages.
@@ -83,7 +83,16 @@ This repository provides the foundation for building a Web3 token sale platform 
 
 ### 7. Build Your Next.js App
 
-The provided Next.js app structure serves as a starting point for building your Web3 application. You can follow this structure to organize your components, context, pages, and other files. Customize and extend the app to fit your requirements.
+The provided Next.js app structure serves as a starting point for building your Web3 application. You can follow this structure to organize your components, context, pages, and other files. 
+
+### 8. React Context Provider
+
+The `context/ERC20Provider.js` file contains a React Context Provider component for managing interactions with the ERC20 token smart contract. It includes methods for:
+
+- **Checking Connection**: Connect to the Ethereum wallet and fetch account details.
+- **Fetching Token Details**: Retrieve information about the token, including total supply, name, symbol, and owner.
+- **Transferring Tokens**: Transfer tokens to a specified address.
+- **Fetching Token Holder Data**: Retrieve and display data about token holders.
 
 ## License
 
@@ -97,4 +106,3 @@ Contributions are welcome! Feel free to submit a pull request or open an issue.
 
 For any inquiries, please contact shubham.more@iitgn.ac.in.
 
----
