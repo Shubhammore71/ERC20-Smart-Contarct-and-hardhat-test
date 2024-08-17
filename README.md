@@ -1,12 +1,27 @@
 # vERC20 Token Sale Platform
 
-This repository contains a basic Hardhat project that demonstrates the use of Hardhat for deploying and testing smart contracts. The project includes a sample ERC20 token contract and a platform for selling the token. The goal is to provide a foundation for building your own Web3 token sale platform.
+This repository contains a basic Hardhat project that demonstrates the use of Hardhat for deploying and testing smart contracts. The project includes a sample ERC20 token contract and a platform for selling the token. Additionally, a Next.js app structure is provided to help you build your own Web3 application.
 
 ## Project Structure
+
+### Hardhat Project
 
 - **Contracts**: The `contracts` directory contains the smart contract code.
 - **Test**: The `test` directory contains tests for the smart contract using Hardhat's testing framework.
 - **Ignition**: The `ignition` directory contains a Hardhat Ignition module for deploying the contract.
+
+### Next.js App Structure
+
+The Next.js app includes the following directory structure:
+
+- **components**: Contains reusable React components.
+- **context**: Provides React context for state management.
+- **contracts**: Includes smart contract ABIs and other related files.
+- **ignition/modules**: Contains modules for Hardhat Ignition deployment.
+- **pages**: Contains Next.js pages.
+- **public**: Static assets like images and fonts.
+- **styles**: Global styles and CSS files.
+- **test**: Test files for the Next.js application.
 
 ## Getting Started
 
@@ -66,6 +81,10 @@ This repository provides the foundation for building a Web3 token sale platform 
 - **Whitelist**: Add a whitelist feature to restrict purchases to specific addresses.
 - **Token Vesting**: Implement a vesting schedule for purchased tokens.
 
+### 7. Build Your Next.js App
+
+The provided Next.js app structure serves as a starting point for building your Web3 application. You can follow this structure to organize your components, context, pages, and other files. Customize and extend the app to fit your requirements.
+
 ## License
 
 This project is licensed under the MIT License.
@@ -76,6 +95,6 @@ Contributions are welcome! Feel free to submit a pull request or open an issue.
 
 ## Contact
 
-For any inquiries, please contact Shubham More at shubham.more@iitgn.ac.in.
+For any inquiries, please contact shubham.more@iitgn.ac.in.
 
 ---
